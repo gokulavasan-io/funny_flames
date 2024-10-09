@@ -46,7 +46,7 @@ form.addEventListener('submit', function(event) {
     const name2 = document.getElementById('girl_name').value.toLowerCase().replace(/\s+/g, '');
 
     let arr = ["Friends", "Lovers", "Affection", "Marriage", "Enemy", "Siblings"];
-    if(name1.includes("okul")&&name2.includes("rindha")||name2.includes("shika") || (name2.includes("oshitha")&& name1.includes("arthi")){
+    if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika") || name2.includes("oshitha")&& name1.includes("arthi")){
         arr=["Lovers"];
         playAudiolove();
         document.body.style.background="url('love.jpg')";
