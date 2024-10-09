@@ -45,10 +45,8 @@ form.addEventListener('submit', function(event) {
     const name2 = document.getElementById('girl_name').value.toLowerCase().replace(/\s+/g, '');
 
     let arr = ["Friends", "Lovers", "Affection", "Marriage", "Enemy", "Siblings"];
-     if(name1.includes("harish")&& name2.includes("oshi")){
-        arr=["Simply waste !!!<br>Poi padi bro"]
-    }
-    else if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika") || name2.includes("oshitha")){
+     
+    if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika")){
         arr=["Lovers"];
         playAudiolove();
         document.body.style.background="url('love.jpg')";
@@ -73,7 +71,7 @@ form.addEventListener('submit', function(event) {
         arr=["She is a heroine...<br>She loves KK"]
         playAudiogopi();
     }
-    else if(name2.includes("priya")||name2.includes("roshini")){
+    else if(name2.includes("priya")||name2.includes("roshini")||name2.includes("sukirthi")){
         arr=["Marriage <br>She is an Angel...<br>She loves her husbund"]
         playAudiomam();
     }
@@ -96,6 +94,9 @@ form.addEventListener('submit', function(event) {
         resultSection.style.padding="30px";   
         playAudiorama();
 
+    }
+    else if(name1.includes("harish")&& name2.includes("oshi")){
+        arr=["Simply waste !!!<br>Poi padi bro"]
     }
 
     else{
