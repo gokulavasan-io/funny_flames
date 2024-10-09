@@ -46,7 +46,7 @@ form.addEventListener('submit', function(event) {
 
     let arr = ["Friends", "Lovers", "Affection", "Marriage", "Enemy", "Siblings"];
      
-    if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika")){
+    if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("ous")){
         arr=["Lovers"];
         playAudiolove();
         document.body.style.background="url('love.jpg')";
