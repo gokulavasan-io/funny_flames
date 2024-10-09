@@ -56,6 +56,16 @@ form.addEventListener('submit', function(event) {
         resultSection.style.borderRadius="10px";
         resultSection.style.padding="30px";
     }
+    else if(name1.includes("okul")&&name2.toLowerCase().includes("rindha") || name2.toLowerCase().includes("oshitha")&&!name1.includes("aveen")){
+        arr=["Lovers"];
+        playAudiolove();
+        document.body.style.background="url('love.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        resultSection.style.backgroundColor="white";
+        resultSection.style.borderRadius="10px";
+        resultSection.style.padding="30px";
+    }
     else if(name1.includes("okul")&&name2.toLowerCase().includes("kani")||name1.includes("arthi")&&name2.toLowerCase().includes("kani")){
         arr=["she is our Sister(Akka)"]
         document.body.style.background="url('akka.jpg')";
