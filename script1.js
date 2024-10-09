@@ -56,7 +56,7 @@ form.addEventListener('submit', function(event) {
         resultSection.style.borderRadius="10px";
         resultSection.style.padding="30px";
     }
-    else if(name1.includes("okul")&&name2.toLowerCase().includes("rindha") || name2.toLowerCase().includes("oshitha")&&!name1.includes("aveen")){
+    else if(name1.includes("ithish")){
         arr=["Lovers"];
         playAudiolove();
         document.body.style.background="url('love.jpg')";
@@ -76,12 +76,17 @@ form.addEventListener('submit', function(event) {
         resultSection.style.padding="30px";   
         playAudioakka();     
     }
+
     else if(name2.includes("pika")){
         arr=["She is a heroine...<br>She loves KK"]
         playAudiogopi();
     }
     else if(name2.includes("ukirthi")||name2.includes("roshini")){
         arr=["Marriage <br>She is an Angel...<br>She loves her husbund"]
+        playAudiomam();
+    }
+    else if(name2.includes("eerthi")||name2.includes("alar")||name2.includes("harshini")||name2.includes("andhiya")||name2.includes("shika")){
+        arr=[`Friends <br>and ${name2} is an Angel...<br>`]
         playAudiomam();
     }
     else if(name1.includes("aveen")){
