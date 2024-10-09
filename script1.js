@@ -98,6 +98,9 @@ form.addEventListener('submit', function(event) {
     else if(name1.includes("harish")&& name2.includes("oshi")){
         arr=["Simply waste !!!<br>Poi padi bro"]
     }
+    else if( name2.includes("oshitha")){
+        arr=["Andha ponnu unakku thangachi bro..."]
+    }
 
     else{
     let small = name1.length < name2.length ? name1 : name2;
