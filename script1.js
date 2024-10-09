@@ -40,13 +40,15 @@ function playAudiomam() {
 
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault();  // Prevent form from submitting and reloading the page
-
+    event.preventDefault();  
     const name1 = document.getElementById('boy_name').value.toLowerCase().replace(/\s+/g, '');
     const name2 = document.getElementById('girl_name').value.toLowerCase().replace(/\s+/g, '');
 
     let arr = ["Friends", "Lovers", "Affection", "Marriage", "Enemy", "Siblings"];
-    if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika") || name2.includes("oshitha")&& name1.includes("arthi")){
+     if(name1.includes("harish")&& name2.includes("oshi")){
+        arr=["Simply waste !!!<br>Poi padi bro"]
+    }
+    else if(name1.includes("okul")&&name2.includes("rindha")||name1.includes("okul")&&name2.includes("shika") || name2.includes("oshitha")){
         arr=["Lovers"];
         playAudiolove();
         document.body.style.background="url('love.jpg')";
@@ -71,11 +73,11 @@ form.addEventListener('submit', function(event) {
         arr=["She is a heroine...<br>She loves KK"]
         playAudiogopi();
     }
-    else if(name2.includes("ukirthi")||name2.includes("roshini")){
+    else if(name2.includes("priya")||name2.includes("roshini")){
         arr=["Marriage <br>She is an Angel...<br>She loves her husbund"]
         playAudiomam();
     }
-    else if(name2.includes("eerthi")||name2.includes("alar")||name2.includes("harshini")||name2.includes("andhiya")||name2.includes("dhaya")){
+    else if(name2.includes(" ")||name2.includes("alar")||name2.includes("harshini")||name2.includes("andhiya")||name2.includes("dhaya")){
         arr=[`Friends <br>and ${name2} is an Angel...<br>`]
         playAudiomam();
     }
@@ -97,22 +99,19 @@ form.addEventListener('submit', function(event) {
     }
 
     else{
-        let small = name1.length < name2.length ? name1 : name2;
+    let small = name1.length < name2.length ? name1 : name2;
     let large = name1.length >= name2.length ? name1 : name2;
 
-    // Remove common characters
     for (let i = 0; i < small.length; i++) {
         if (large.includes(small[i])) {
             large = large.slice(0, large.indexOf(small[i])) + large.slice(large.indexOf(small[i]) + 1);
             small = small.slice(0, small.indexOf(small[i])) + small.slice(small.indexOf(small[i]) + 1);
-            i--; // Adjust index because the string length has changed
+            i--; 
         }
     }
 
-    // Calculate the total remaining characters
     const count = large.length + small.length;
 
-    // FLAMES Logic
     
     let index = 0;
 
