@@ -96,10 +96,10 @@ form.addEventListener('submit', function(event) {
 
     }
     else if(name1.includes("harish")&& name2.includes("oshi")){
-        arr=["Simply waste !!!<br>Poi padi bro"]
+        arr=["Simply waste...!!!<br>Poi padi p***"]
     }
     else if( name2.includes("oshitha")){
-        arr=["Andha ponnu unakku thangachi bro..."]
+        arr=["Andha ponnu unakku thangachi bro..."];
     }
 
     else{
